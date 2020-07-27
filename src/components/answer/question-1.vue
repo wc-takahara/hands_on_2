@@ -1,10 +1,8 @@
 <template>
-  <!-- 問題 用意してあるデータをv-forを使って表示してください(キー は id)表示するのは、名字だけで大丈夫です。 -->
-  <!-- 使うもの v-for v-bind -->
   <div>
     <ul>
-      <li>
-        <span><!-- ここに名字が表示されるように --></span>
+      <li v-for="list in lists" v-bind:key="list.id">
+        <span>{{list.name}}</span>
       </li>
     </ul>
   </div>

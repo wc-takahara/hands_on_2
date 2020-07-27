@@ -29,7 +29,8 @@ export default {
       this.lists.splice(index,1);
     },
     addList :function() {
-      this.lists.push({id:this.id, name:this.name, position:"平社員"})
+      this.lists.push({id:this.id, name:this.name, position:"平社員"});
+      this.name = "";
     }
   }
 }

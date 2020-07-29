@@ -31,6 +31,9 @@ export default {
     addList :function() {
       this.lists.push({id:this.id, name:this.name, position:"平社員"})
       this.name = "";
+      //今回、エラーがでたのは、「v-forでbindするkeyが重複したため」です。(keyはユニークでないといけません。)
+      //なぜ重複するのかと言いますと、id変数が6のままだからです。
+      //それを解消するためには、登録するために変数idを1ずつ増やす必要があるため下記のようにインクリメント演算子を使っております。
       this.id++;
     }
   }

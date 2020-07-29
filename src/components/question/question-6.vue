@@ -5,7 +5,7 @@
   <div>
     <ul>
       <li v-for="(list, index) in lists" v-bind:key="list.id">
-        <span v-bind:class="[list.position =='部長'?'isBold':'isNormal']">{{index}}番目 {{list.name}}<button v-on:click="deleteList(index)">削除</button></span>
+        <span v-bind:class="[list.position =='部長'?'isBold':'isNormal']">{{index}}番目 {{list.name}}<button>削除</button></span>
       </li>
     </ul>
   </div>
@@ -26,7 +26,6 @@ export default {
   },
   methods: {
     deleteList: function(index) {
-      this.lists.splice(index,1);
     }
   }
 }

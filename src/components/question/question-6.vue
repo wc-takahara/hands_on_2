@@ -25,7 +25,7 @@ export default {
     }
   },
   methods: {
-    deleteList: function(index) {
+    deleteList: function() {
     }
   }
 }
